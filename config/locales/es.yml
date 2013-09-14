@@ -1,0 +1,35 @@
+es:
+
+  orders:
+       new:
+         legend: "Please enter da detail"
+       form:
+              address_html: "Address da"
+
+  store:
+      index:
+        title: "Pragmatic da Category"
+        add:    "Add da cart"
+
+  layouts:
+      application:
+         title: "Publications de Bookshelf"
+         home:  "Inaction"
+         question:    "Petunias"
+         news:        "Notice"
+
+#   carts:
+#        show:
+#          title: "dour cart"
+#          checkout: "dCheckout"
+#          empty:     "Empty da cart"
+#
+#
+#     number:
+#        currency:
+#           format:
+#             unit:  "$us"
+#             precision: 2
+#             separator: ","
+#             delimiter: "."
+#             format: "%u%n%u"

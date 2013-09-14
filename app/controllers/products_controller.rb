@@ -10,6 +10,14 @@ class ProductsController < ApplicationController
     end
   end
 
+
+   def who_bought
+     @product = Product.fin(params[:id])
+     respond_to do |format|
+       format.atom
+       format.xml {render :xml => @product }
+   end
+  end
   # GET /products/1
   # GET /products/1.json
   def show

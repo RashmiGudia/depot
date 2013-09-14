@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<div class="cart_title"><%= t('.title') %></div>
+
+
+<% @cart.line_item.each do |item| %>
+    <li>
+      <%= item.quantity %> &times; <%= item.product.title %> </li>
+    <li class="item_price"><%= number_to_currency(item.total_price) %>
+    </li>
+<% end %>
+</ul>
+
+
+<%= button_to t('.checkout'), new_order_path, :method => :get %>
+<%= button_to t('.empty'), @cart, :method => :delete,
+              :confirm => 'Are you sure?'  %>
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
